@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li ><img class="logo"src="/images/Capture.PNG"></li>
+
+                <li class="button"><input type="text" placeholder="Search.." name="search"><i class="fas fa-search"
+                        id="search"></i></li>
+                <li></li>
+                <li><i class="fas fa-user"></i><br>Account</li>
+                <li><i class="fas fa-file-alt"></i><br>orders</li>
+                <li><i class="fas fa-shopping-cart"></i><br>Cart</li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section>
+        <h1>Recomended Products </h1>
+        <div class="filters">
+            <span> Selected Filters:<button>Continetal</button></span>
+            <span> Sort by:<button>Popularity</button></span>
+        </div>
+        <hr>
+
+        <div class="container">
+            <div class="premuim seller">
+                <ul>
+                    <li><h1 class="top"> Premuim Bestseller </h1><li>
+                <li><img  class ="auto"src="/images/Auto Express.PNG" alt="Auto express"></li>
+                <li> <img  class="appr" src="images/apporved.PNG"></li>
+                <li><h2> Continental - ContieCocontact 5</li></h2>
+                <li><span class="pp1"> 205/44 R16 H </li></span>
+                <li><span class="pp2"> Stock </li></span>
+                <li><span class="pp3"> Price 340 </li></span>
+                <li><span class="pp4"> total</span></li></span>
+                <li><span class="pp5">  Rs 1.360 </span></li></span>
+                <li><button class="incement" onclick="increment()">+</button></li>
+                <li><span class="limit">4 </span></li>
+                <li><button  class ="decrement" onclick="decrement()">-</button></li>
+                <li><button class="cart"><i class="fas fa-shopping-cart">Add To cart</i></button></li>
+                </ul>
+            </div>
+            <div class="economy-seller">
+                <ul>
+                    <li><h1 class="top"> Economic Bestseller </h1><li>
+                <li><img class ="auto" src="/images/Auto Express.PNG" alt="Auto express"></li>
+                <li> <img class="appr" src="images/apporved.PNG"></li>
+                <li><h3> Continental - ContieCocontact 5</li></h3>
+                <li><span class="es1"> 205/44 R16 H </li></span>
+                <li><span class="es2"> Stock </li></span>
+                <li><span class="es3"> Price 340 </li></span>
+                <li><span class="es4"> total</span></li></span>
+                <li><span class="es5">  Rs 1.360 </span></li></span>
+                <li><button class="incement" onclick="increment()">+</button></li>
+                <li><span class="limit">4 </span></li>
+                <li><button  class ="decrement" onclick="decrement()">-</button></li>
+                <li><button class="cart"><i class="fas fa-shopping-cart">Add To cart</i></button></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="contetnt">
+            <ul>
+                <li> <h4>Contintenal Premium <br> Contact<sup>tm</sup>6</h4   ></li>
+                <li><img class="orders" src="/images/apporved.PNG"></li>
+                <li> <p>195/55 R15 85V<br>Suv</p></li>
+                <li> <p>stock<p></li>
+                <li> <p>Price <span> Rs 340 </span></p></li>
+
+                <li><button  class ="inc"onclick="increment()">+</button></li>
+                <li><p class="lim"><span>4 </span></p></li>
+                <li><button  class="dec" onclick="decrement()">-</button></li>
+                <li> <h5> TotalRs 1360 <h5> </li>
+                <li> <button class="cart-2"> <i class="fas fa-shopping-cart">add To Cart</i></button></li>
+            </ul>
+        </div>
+        <div class="contetnt">
+            <ul>
+                <li> <h4>Contintenal Premium <br> Contact<sup>tm</sup>6</h4   ></li>
+                <li><img class="ole"src="/images/apporved.PNG"></li>
+                <li> <p>195/55 R15 85V<br>Suv</p></li>
+                <li> <p>stock<br>8 tires left</p> </li>
+                    
+                <li> <p>Price <span> Rs 340 </span></p></li>
+
+                <li><button  class ="inc2"onclick="increment()">+</button></li>
+                <li><p class="lim2"><span>4 </span></p></li>
+                <li><button  class="dec2" onclick="decrement()">-</button></li>
+                <li> <h5> TotalRs 1360 <h5> </li>
+                <li> <button class="cart-2"><i class="fas fa-shopping-cart">add To Cart</i></button></li>
+            </ul>
+        </div>
+        <div class="contetnt">
+            <ul>
+                <li> <h4>Contintenal Premium <br> Contact<sup>tm</sup>6</h4   ></li>
+                <li><img class ="apporved" src="/images/apporved.PNG"></li>
+                <li> <p>195/55 R15 85V<br>Suv</p></li>
+                <li> <p>stock<br> Back in week<p> </li>
+                <li> <p>Price <span> Rs 340 </span></p></li>
+
+                <li><button  class ="inc3"onclick="increment()">+</button></li>
+                <li><p class="lim3"><span>4</span></p></li>
+                <li><button  class="dec3" onclick="decrement()">-</button></li>
+                <li> <h5> TotalRs 1360 <h5> </li>
+                <li> <button class="cart-2"> <i class="fas fa-shopping-cart">add To Cart</i></button></li>
+            </ul>
+        </div>
+
+        <button class="load"> Load More Results </button>
+      
+        <section>
+</body>
+
+</html>
